@@ -1,0 +1,11 @@
+*{
+    color:green;
+}
+
+:root{
+    --primary-border: 10px solid black;
+}
+
+body, p{
+    border: var(--primary-border);
+}
