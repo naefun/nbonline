@@ -51,6 +51,32 @@
         // echo has NO return value
         // print has a return value of 1
 
+        // DATA TYPES - string, integer, float, boolean, array, 
+        // object, null, resource
+        $myString = "string";
+        $myInt = 12;
+        $myFloat = 12.5;
+        $myBoolean = TRUE;
+        $myArray = array("car", "bike", "truck");
+        $myNull = NULL;
+        // creating a class and an object
+        class Phone{
+            function Phone(){
+                $this ->model = "Apple";
+            }
+        }
+        $iPhone = new Phone();
+        echo $iPhone->model . "<br>";
+        // use var_dump(variable) to display the variables data type
+        echo var_dump($iPhone);
+
+        // string length using strlen()
+        echo "<br>String length of $myString is: " . strlen($myString);
+        // string word count using str_word_count()
+        $myString .= " is a string";
+        echo str_word_count("this is a string");
+        
+
     ?>
     <!-- PHP end -->
 </body>
